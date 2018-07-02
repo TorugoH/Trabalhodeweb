@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+      <title>Integrando Conhecimento</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="calculadora.css">
+      <link rel="icon" href="imagens-do-site/oculos-geek-logo-do-app.png">
+  </head>
+  <body>
+    <h1 id="nome-do-site">Integrando Conhecimento</h1>
+    <header class="menu-logo">
+      <img src="imagens-do-site/oculos transparentes.png" id="logo">
+      <ul>
+        <li class="menu-principal" id="menu"><a href="index.html">Início</a></li>
+        <li class="menu-principal" id="artigos"><a href="artigos_da_pag.html">Artigos</a></li>
+        <li class="menu-principal" id="exercicios"><a href="exercicios_da_pag.html">Exercícios</a></li>
+        <li class="menu-principal atual" id="calculadora"><a href="calculadora.html">Calculadoras</a></li>
+        <li class="menu-principal" id="sobre"><a href="sobre.html">Colaboradores</a></li>
+      </ul>
+      <hr title="Retrair cabeçalho">
+    </header>
+    <main>
+      <div class="gambiarra">
+        <h1>Fatoração</h1>
+        <div class="principal">
+          <div id="fat">
+            <h2>Fatores primos e divisores</h2>
+            <div class="exterior">
+              <div class="ent">
+                <div>Insira um número inteiro entre 2 e 10<sup>15</sup></div>
+                <div class="align-center">
+                  <input class="int" type="number" min="2" max="1000000000000000"><button>Calcular</button>
+                </div>
+              </div>
+            </div>
+            <div class="exterior">
+              <div class="sai">
+                <div>
+                  <strong>Forma fatorada:</strong> <span id="ff"></span>
+                </div>
+                <div>
+                  <strong>Divisores:</strong>
+                  <div class="oculto" id="divs"></div>
+                  <span class="lermais">Mostrar...</span>
+                </div>
+                <div>
+                  <strong>Procedimento:</strong>
+                  <table class="oculto procedimento" id="p-divs">
+                    <tbody></tbody>
+                  </table>
+                  <span class="lermais">Mostrar...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mmc-mdc">
+            <h2>MMC e MDC</h2>
+            <div class="exterior">
+              <div class="ent">
+                <div>Insira qualquer número de inteiros entre 2 e 10<sup>15</sup><br>
+                (separados por 1 espaço)</div>
+                <div class="align-center">
+                  <input class="grande" type="text"><button>Calcular</button>
+                </div>
+              </div>
+            </div>
+            <div class="exterior">
+              <div class="sai">
+                <div class="console erro oculto" id="erro-mmc-mdc">Entrada inválida.</div>
+                <div>
+                  <strong>MMC:</strong> <span id="mmc"></span>
+                  <div class="console aviso oculto" id="aviso-mmc">Esse resultado é maior que 10<sup>15</sup>, logo pode estar incorreto após o 16° algarismo.</div>
+                  <ul class="condensada">
+                    <li><strong>Forma fatorada:</strong> <span id="mmc-ff"></span></li>
+                  </ul>
+                </div>
+                <div>
+                  <strong>MDC:</strong> <span id="mdc"></span>
+                  <ul class="condensada">
+                    <li><strong>Forma fatorada:</strong> <span id="mdc-ff"></span></li>
+                  </ul>
+                </div>
+                <div>
+                  <strong>Procedimento:</strong>
+                  <table class="oculto procedimento" id="p-mmc-mdc">
+                    <tbody></tbody>
+                  </table>
+                  <span class="lermais">Mostrar...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="gambiarra">
+        <h1>Função Afim</h1>
+        <div class="principal">
+          <div id="acha-func">
+            <h2>Encontrar fórmula da função</h2>
+            <div class="exterior">
+              <div class="ent">
+                <div>Insira as coordenadas (x, y) de 2 pontos.<br>
+                São aceitas frações com numerador e<br>
+                denominador separados por barra. Ex: 1/2, 7/3</div>
+                <table class="campo-de-inputs">
+                  <tr>
+                    <td rowspan="2">Ponto 1<img src="chave.png" class="chave"></td>
+                    <td>x = <input type="text" value="0"></td>
+                  </tr>
+                  <tr>
+                    <td>y = <input type="text" value="2"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Ponto 2<img src="chave.png" class="chave"></td>
+                    <td>x = <input type="text" value="3/2"></td>
+                  </tr>
+                  <tr>
+                    <td>y = <input type="text" value="5/4"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="align-center"><button>Calcular</button></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="exterior">
+              <div class="sai">
+                <div class="console erro oculto" id="erro-equacao">Os pontos devem ter coordenadas x diferentes, senão são o mesmo ponto!</div>
+                <div>
+                  <strong>Equação:</strong>
+                  <ul class="condensada">
+                    <li>
+                      <strong>Decimal:</strong>
+                      <span id="equacao-d" class="algebra"></span></li>
+                    <li>
+                      <strong>Fração:</strong>
+                      <span id="equacao-f" class="algebra"></span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <strong>Procedimento:</strong>
+                  <div class="oculto algebra" id="p-equacao"></div>
+                  <span class="lermais">Mostrar...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="calculadora.js"></script>
+    <script src="fecha header.js"></script>
+  </body>
+</html>

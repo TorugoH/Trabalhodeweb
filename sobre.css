@@ -1,0 +1,27 @@
+.Bons{
+text-align: center;
+}
+/*id das imagens sao as iniciais de cada um*/
+#imagens{
+  width: 75vw;
+}
+#imagens>div{
+  display: flex;
+  justify-content: center;
+}
+#imagens>:not(:last-child){
+  border-bottom: 2px dashed #7f7f7f;
+}
+#imagens>div>:not(:first-child){
+  border-left: 2px dashed #7f7f7f;
+}
+#imagens>div>div{
+  width: 33.33%;
+  text-align: center;
+}
+#imagens img{
+  height: 250px;
+  position:relative;
+  top:-50px;
+  margin-bottom: -40px;
+}

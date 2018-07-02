@@ -1,0 +1,236 @@
+.ent::before{
+  content: "Entrada";
+}
+.sai::before{
+  content: "Saída";
+}
+.exterior>*::before{
+  position:absolute;
+  font-style: italic;
+  font-family: serif;
+  top:-0.75em;
+  left:0.75em;
+  padding:0.25em;
+  background-color: rgba(204,204,204,1);
+    line-height: 1;
+}
+
+.lermais{
+  color: rgb(0, 0, 255);
+  cursor: pointer;
+}
+.lermais:hover{
+  text-decoration: underline;
+}
+.align-center{
+  text-align: center;
+}
+.grande{
+  width:15em;
+}
+.inline-block{
+  display:inline-block;
+}
+
+.exterior{
+  margin-top: 1.625em;
+  line-height:1.125em;
+  font-family: sans-serif;
+}
+.exterior>*{
+  background-color:  rgba(230,230,230,1);
+  border: 2px solid rgba(204,204,204,1);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top:0.75em;
+  display:inline-block;
+  position:relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.exterior>*>*{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.principal h2{
+  margin-top:0;
+}
+main input{
+  padding:1px 2px;
+  font-size:1em;
+  width: 10em;
+  border: 1px solid #bfbfbf;
+}
+main tr:not(:first-of-type) input{
+  margin-top:0.15em;
+}
+main button{
+  position: relative;
+  bottom:0.05em;
+  cursor:pointer;
+  font-size:1em;
+  padding: 0px 4px;
+  margin-left: 0.25em;
+}
+.int:invalid{
+  color:#ff0000;
+}
+.principal>*{
+  vertical-align: top;
+  max-width:500px;
+  padding-top:1em;
+  padding-bottom:1em;
+  border-top: 2px dashed #7f7f7f;
+  border-bottom: 2px dashed #7f7f7f;
+}
+.principal>:not(:first-child){
+  padding-left:1em;
+  border-left: 2px dashed #7f7f7f;
+}
+.principal>:not(:last-child){
+  padding-right:1em;
+}
+
+.condensada{
+  margin-top: 0.125em;
+  margin-bottom:0;
+  padding-left: 0.5em;
+  list-style:none;
+}
+.condensada li::before{
+  content: "- ";
+  font-weight: bold;
+  position: relative;
+  top:-1px;
+}
+
+.console{
+  padding: 0.125em 0.375em;
+  border-radius: 0.5em;
+}
+.aviso{
+  color:rgb(255,127,0);
+  background-color: rgb(242, 225, 159);
+}
+.aviso::before{
+  content: "Aviso: ";
+  font-weight: bold;
+}
+.erro::before{
+  content: "Erro: ";
+  font-weight: bold;
+}
+.erro{
+  color:red;
+  background-color: rgb(226, 208, 201);
+}
+
+.principal{
+  display: flex;
+}
+
+.procedimento{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.procedimento td:not(:last-child){
+  padding-right: 0.25em;
+}
+.procedimento td:not(:first-child):not(.fator-comum){
+  padding-left: 0.25em;
+}
+.procedimento td:nth-child(1){
+  text-align: right;
+}
+.procedimento tr:not(:last-child) td:not(.fator-comum){
+  padding-bottom: 0.125em;
+}
+#p-divs tr:not(:first-child) td:nth-child(1){
+  border-right: 1px solid black;
+}
+#p-divs td:nth-child(3){
+  border-left: 1px solid #7f7f7f;
+  color:#7f7f7f;
+}
+#p-mmc-mdc td:nth-child(1){
+  border-right: 1px solid black;
+}
+.fator-comum{
+  border-radius: 11px;
+  box-sizing: border-box;
+  height:21px;
+  min-width:21px;
+  display: inline-block;
+  text-align: center;
+  border:1px solid black;
+  margin-left: 0.125em;
+}
+.chave{
+  position: absolute;
+  transform: rotate(90deg);
+  width: 3.5em;
+}
+.campo-de-inputs td[rowspan]{
+  position: relative;
+  padding-right: 0.9em;
+}
+.campo-de-inputs .chave{
+  left: 2.2em;
+  top: 0;
+  bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.campo-de-inputs tr:nth-child(2n+3) td{
+  border-top:0.5em solid rgba(0,0,0,0); /*foi mal pela gambiarra*/
+}
+.campo-de-inputs{
+  border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parenteses-abre, .parenteses-fecha{
+  position: relative;
+}
+.parenteses-abre{
+  margin-left: 0.67em;
+  padding-left:0.08em;
+}
+.parenteses-fecha{
+  margin-right: 0.67em;
+  padding-right:0.08em;
+}
+.parenteses-abre::before, .parenteses-fecha::after{
+  line-height: 1;
+  font-size: 2em;
+  font-family: serif;
+  font-style: normal;
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.parenteses-fecha::after{
+  content: ")";
+  left:100%;
+}
+.parenteses-abre::before{
+  content: "(";
+  right:100%;
+}
+#p-equacao sub{
+  border:0 !important;
+  font-size:0.67em;
+}
+#p-equacao div{
+  padding-top: 0.3em;
+}
+main{
+  text-align: center;
+}
+.gambiarra{
+  display: inline-block;
+  text-align: left;
+}

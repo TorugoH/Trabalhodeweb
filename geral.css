@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "giz";    /* dando um nome à fonte */
+  src: url("fontes/erasdust.ttf") format('truetype'); /* 1º formato */
+}
+#nome-do-site{
+  text-align: center;
+  padding: 0.5em 0;
+  margin:0;
+  line-height: 1em;
+  font-size: 2.25em;
+  background-color: rgb(37, 81, 10);
+  color:#ffffff;
+  font-weight: normal;
+  font-family: "giz", fantasy;
+}
+.menu-logo>ul{
+  width:85%;
+  margin-left: auto;
+  margin-right:3.75%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top:1em;
+}
+li.menu-principal{
+  list-style: none;
+  display:inline-block;
+  width:15%;
+  text-align: center;
+  height:2em;
+  border-radius: 4px;
+  margin-left: 3.75%;
+  margin-bottom: 1em;
+}
+.menu-principal:not(.atual){
+  background-color: rgb(163, 224, 221);
+  border: 2px solid rgb(104, 175, 201);
+}
+.atual{
+  background-color: lightgreen;
+  border: 2px solid #25bc37;
+}
+.menu-principal a{
+ color:white;
+ text-shadow:2px 2px rgba(0,0,0,0.5);
+ font-size:1.5em;
+ vertical-align: middle;
+}
+.menu-principal:not(.atual):hover{
+  background-color: rgb(82, 198, 221);
+  border: 2px solid rgb(82, 140, 201);
+}
+#logo{
+  width:5%;
+  position: absolute;
+  left: 5%;
+  top: 0;
+  bottom:8px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+header hr{
+  margin:0;
+  cursor: n-resize;
+  border: 0.25em solid rgb(186, 226, 224);
+}
+
+body{
+  margin:0px;
+}
+header{
+  position: sticky;
+  top:0px;
+  background-color: rgb(199, 255, 165);
+  z-index:1;
+}
+main{
+  margin-right: 4em;
+  margin-left: 4em;
+  margin-top:2em;
+  margin-bottom: 4em;
+  text-align: justify;
+}
+p, main ul, ol, table{
+  font-family:sans-serif;
+  line-height: 1.15em;
+}
+main ul, ol{
+  padding-left:2.4em;
+}
+ul p, ol p{
+  margin: 0.7em 0;
+}
+main :not(.condensada) li:not(:first-child){
+  margin-top:0.35em;
+}
+main h1,h2,h3{
+  line-height: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.67em;
+}
+h3{
+  font-size: 1.25em;
+}
+a{
+  text-decoration: none;
+}
+main a:hover{
+  text-decoration: underline;
+}
+
+.algebra{
+  font-style: italic;
+  font-family: serif;
+}
+.passos{
+  line-height: 1.5em;
+}
+.semarcacao{
+  list-style: none;
+  padding-left:2em;
+}
+.flexivel{
+  display:flex;
+}
+.semargem-top{
+  margin-top:0 !important;
+}
+.semargem-bottom{
+  margin-bottom:0 !important;
+}
+.img-a-esq{
+  display:inline-block;
+  margin-right:2em;
+}
+
+.float-left{
+  float: left;
+  margin-right:1em;
+}
+.oculto{
+  display:none !important;
+}
+
+.fracao{
+  display:inline-flex;
+  flex-direction: column;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  top:-0.5em;
+  margin-top:0.4em;
+  margin-bottom: -0.4em;
+}
+.fracao :first-child{
+  border-bottom: 1px solid black;
+  margin-bottom:-1px;
+}
+.fracao :last-child{
+  border-top: 1px solid black;
+}
+#center{
+  position: relative;
+  left:200px;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Integrando Conhecimento</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="exercicios.css">
+      <link rel="icon" href="imagens-do-site/oculos-geek-logo-do-app.png">
+  </head>
+  <body>
+    <h1 id="nome-do-site">Integrando Conhecimento</h1>
+    <header class="menu-logo">
+      <img src="imagens-do-site/oculos transparentes.png" id="logo">
+      <ul>
+        <li class="menu-principal" id="menu"><a href="index.html">Início</a></li>
+        <li class="menu-principal" id="artigos"><a href="artigos_da_pag.html">Artigos</a></li>
+        <li class="menu-principal atual" id="exercicios"><a href="exercicios_da_pag.html">Exercícios</a></li>
+        <li class="menu-principal" id="calculadora"><a href="calculadora.html">Calculadoras</a></li>
+          <li class="menu-principal" id="sobre"><a href="sobre.html">Colaboradores</a></li>
+      </ul>
+      <hr title="Retrair cabeçalho">
+    </header>
+    <main>
+      <table>
+        <caption>EXERCÍCIOS:</caption>
+        <tr><td class="perguntas">
+      <p class="perguntas">
+        1.(FGV) O gráfico da função f (x) = mx + n passa pelos pontos (– 1, 3) e (2, 7). O valor de m é:<br>
+        <br>
+        a) 5/3<br>
+        b) 4/3<br>
+        c) 1<br>
+        d) 3/4<br>
+        e) 3/5
+      </p>
+    </td>
+    <td>
+      <div class="explicando">
+        <p>
+          <span class="negrito">1.Explicação</span><br><br>
+          <span class="desaparece">
+        O primeiro ponto que é dado é o (– 1, 3), em que o valor de x é – 1 e o valor de f(x) é 3. Substituindo esses valores na função, temos:<br>
+        f (x) = mx + n<br>
+        3 = m.(– 1) + n<br>
+        n = 3 + m<br>
+        Vamos também substituir o segundo ponto (2, 7) na função, sendo que x vale 2 e f(x) vale 7:<br>
+        f (x) = mx + n<br>
+        7 = m.2 + n<br>
+        n = 7 – 2m<br>
+        Nas duas substituições feitas, encontramos dois valores para n. Se igualarmos essas duas equações, teremos:<br>
+        3 + m = 7 – 2m<br>
+        m + 2m = 7 – 3<br>
+        3m = 4<br>
+        m = 4/3<br>
+A alternativa correta é a letra b.</p>
+</span></div>
+</td></tr>
+<tr><td class="perguntas">
+<p class="perguntas">
+  2.(UEL) Três ciclistas percorrem um circuito saindo todos ao mesmo tempo, do mesmo ponto, e com o mesmo sentido. O primeiro faz o percurso em 40 s, o segundo em 36 s e o terceiro em 30 s. Com base nessas informações, depois de quanto tempo os três ciclistas se reencontrarão novamente no ponto de partida, pela primeira vez, e quantas voltas terá dado o primeiro, o segundo e o terceiro ciclistas, respectivamente?<br>
+  <br>
+  a) 5 minutos, 10 voltas, 11 voltas e 13 voltas.<br>
+  b) 6 minutos, 9 voltas, 10 voltas e 12 voltas.<br>
+  c) 7 minutos, 10 voltas, 11 voltas e 12 voltas.<br>
+  d) 8 minutos, 8 voltas, 9 voltas e 10 voltas.<br>
+  e) 9 minutos, 9 voltas, 11 voltas e 12 voltas.
+</p></td>
+  <td>
+<div class="explicando">
+<p>
+  <span class="negrito">2.Explicação</span><br><br>
+  <span class="desaparece">
+Queremos saber o menor tempo em que os ciclistas se encontrarão. Para isso, faremos o cálculo do MMC dos tempos de cada um deles:<br>
+<img src="http://www.mundoeducacao.com/upload/conteudo/mmc-3.jpg" id="imagem">
+Multiplicando todos os números que apareceram à direita na fatoração, teremos o seguinte produto:<br>
+
+MMC (30, 42, 40) = 2 · 2 · 2 · 3 · 3 · 5<br>
+MMC (30, 42, 40) = 360<br>
+
+Os ciclistas encontrar-se-ão depois de passados 360 s, o que corresponde a 6 min, uma vez que (60 s)· 6 = 360 s. Sabendo que o primeiro ciclista faz o percurso em 40 s, o segundo, em 36 s; e o terceiro, em 30 s, vejamos em que volta cada um deles estará:
+<br>
+1° ciclista:<br>
+(360 s) : (40 s / volta) = 9ª volta
+<br>
+2° ciclista:<br>
+(360 s) : (36 s / volta) = 10ª volta
+<br>
+3° ciclista:<br>
+(360 s) : (30 s / volta) = 12ª volta
+<br>
+Portanto, a alternativa correta é a letra b.</span>
+</p>
+</div></td>
+<tr>
+<td class="perguntas">
+<p class="perguntas">
+  3.(Fuvest – SP) No alto da torre de uma emissora de televisão, duas luzes “piscam” com frequências diferentes. A primeira “pisca” 15 vezes por minuto e a segunda “pisca” 10 vezes por minuto. Se num certo instante, as luzes piscam simultaneamente, após quantos segundos elas voltarão a “piscar simultaneamente”?
+  <br>
+  a) 12<br>
+  b) 10<br>
+  c) 20<br>
+  d) 15<br>
+  e) 30
+</p>
+</td>
+<td>
+<div class="explicando">
+<p>
+<span class="negrito">3.Explicação</span><br><br>
+<span class="desaparece">Como o exercício nos questiona “após quantos segundos elas voltarão a 'piscar simultaneamente'”, precisamos converter as informações dadas para medidas de “segundos”. Portanto, se a primeira torre “pisca” 15 vezes por minuto, sabendo que um minuto equivale a 60 segundos, podemos fazer 60 : 15 = 4, pois as luzes da primeira piscam de 4 em 4 segundos. Equivalentemente, os cálculos para a segunda torre são 60 : 10 = 6, o que nos indica que as luzes da segunda torre piscam de 6 em 6 segundos.<br><br>
+
+4, 6 | 2<br>
+2, 3 | 2<br>
+ 1, 3| 3<br>
+ 1, 1 | 3 * 2* 2 = 12<br><br>
+
+Multiplicando os números que dividem o 4 e o 6, temos 2 x 1 x 3 = 12. Portanto, MMC (4,6) = 12. Logo, as torres piscaram juntas a cada 12 segundos. <br></span>
+</p>
+</div>
+</td>
+</tr>
+<tr>
+<td class="perguntas">
+  <p class="perguntas">
+4.José possui um supermercado e pretende organizar de 100 a 150 detergentes, de três marcas distintas, na prateleira de produtos de limpeza, agrupando-os de 12 em 12, de 15 em 15 ou de 20 em 20, mas sempre restando um. Quantos detergentes José tem em seu supermercado? </p></td>
+<td>
+  <div class="explicando">
+  <p>
+<span class="negrito">4.Explicação</span><br><br>
+<span class="desaparece">
+  Se José arruma os detergentes em grupos de múltiplos de 12, 15 ou 20, e sobra 1, vamos então encontrar o mínimo múltiplo comum entre esses números e adicionaremos 1 ao resultado. Vejamos:<br>
+
+   12, 15, 20 | 2<br>
+  6 , 15 , 10 | 2<br>
+    3 , 15 , 5 | 3<br>
+     1 , 5 , 5 | 5<br>
+   1 , 1 , 1 |<br>
+
+  Temos que multiplicar os números que apareceram à direita: 2 x 2 x 3 x 5 = 60. Todos os múltiplos de 60 serão também múltiplos comuns a 12, 15 e 20. Vejamos os múltiplos de 60:<br>
+
+  M(60) = {0, 60, 120, 180, 240, ...}<br>
+
+  Você pode observar que o único dos múltiplos de 60 que se encaixa na quantidade de detergentes do supermercado de José é o 120. Mas falta ainda acrescentarmos aquele detergente que sempre restava, portanto, podemos concluir que no supermercado de José havia 121 detergentes.
+</span>
+</p></div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p class="perguntas">5.(U. Católica de Salvador-BA)
+
+Seja a função f de R em R definida por f(x) = 54x + 45, determine o valor de f(2 541) – f(2 540).</p>
+</td>
+<td>
+  <div class="explicando">
+  <p>
+  <span class="negrito">5.Explicação</span><br><br><br>
+  <span class="desaparece">f(2 541) = 54 * 2 541 + 45<br><br>
+f(2 541) =  137 214 + 45<br><br>
+f(2 541) = 137 259<br><br>
+f(2 540) = 54 * 2 540 + 45<br><br>
+f(2 540) = 137 160 + 45<br><br>
+f(2 540) = 137 205<br><br>
+f(2 541) – f(2 540) → 137 259 – 137 205 → 54
+<br><br><br>
+A diferença será igual a 54.</span>
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td >
+<p id="seis" class="perguntas">6.Determine a função afim f(x) = ax + b, sabendo que:<br><br> f(1) = 5 e f(–3) = –7.</p>
+</td>
+<td>
+  <div class="explicando">
+  <p>
+  <span class="negrito">6.Explicação</span><br><br>
+  <span class="desaparece">f(1) = 5<br>
+f(1) = a * 1 + b<br>
+5 = a + b<br>
+a + b = 5<br>
+<br>
+f(–3) = –7<br>
+f(–3) = a * (–3) + b<br>
+f(–3) = –3a + b<br>
+–3a + b = –7<br>
+
+Sistema de equações<br>
+Isolando a na 1º equação<br>
+a + b = 5<br>
+a = 5 – b<br>
+Substituindo o valor de a na 2º equação <br>
+–3a + b = –7<br>
+–3 * (5 – b) + b = –7<br>
+–15 + 3b + b = –7<br>
+4b = –7 + 15<br>
+4b = 8<br>
+b = 2 <br>
+Substituindo o valor de b na 1º equação<br>
+a = 5 – b<br>
+a = 5 – 2<br>
+a = 3<br>
+A função será definida pela seguinte lei de formação: f(x) = 3x + 2</span>
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p class="perguntas" id="sete">7.A função R(t) = at + b expressa o rendimento R, em milhares de reais, de certa aplicação. O tempo t é contado em meses, R(1) = –1 e R(2) = 1. Nessas condições, determine o rendimento obtido nessa aplicação, em quatro meses. </p>
+</td>
+<td>
+  <div class="explicando">
+  <p>
+  <span class="negrito">7.Explicação</span><br><br>
+  <span class="desaparece">
+    R(1) = –1<br>
+    R(1) = a * 1 + b<br>
+    –1 = a + b<br>
+    a + b = –1<br>
+<br>
+    R(2) = 1<br>
+    R(2) = a * 2 + b<br>
+    1 = 2a + b<br>
+    2a + b = 1<br>
+
+    Sistema de equações<br>
+    <img src="http://www.brasilescola.com/upload/conteudo/images/Untitled-130.gif"><br>
+
+    Isolando b na 1ª equação<br>
+    a + b = –1<br>
+    b = –1 – a<br>
+    Substituindo o valor de b na 2ª equação<br>
+    2a + b = 1<br>
+    2a + (–1 – a) = 1<br>
+    2a – 1 – a = 1<br>
+    a = 1 + 1<br>
+    a = 2<br>
+    Substituindo o valor de a na 1ª equação<br>
+    b = – 1 – a<br>
+    b = –1 – 2<br>
+    b = –3<br>
+    A função será dada pela seguinte lei de formação: R(t) = 2t – 3.<br>
+    Fazendo f(4), temos:<br>
+    R(t) = 2 * 4 – 3<br>
+    R(t) = 8 – 3<br>
+    R(t) = 5<br>
+  <br>
+    O rendimento obtido nessa aplicação será de R$ 5 000,00.
+  </span>
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p class="perguntas">8.(ENEM 2011)O prefeito de uma cidade deseja construir uma rodovia para dar acesso a outro município. Para isso, foi aberta uma licitação na qual concorreram duas empresas. A primeira cobrou R$ 100 000,00 por km construído (n), acrescidos de um valor fixo de R$ 350 000,00, enquanto a segunda cobrou R$ 120 000,00 por km construído (n), acrescidos de um valor fixo de R$ 150 000,00. As duas empresas apresentam o mesmo padrão de qualidade dos serviços prestados, mas apenas uma delas poderá ser contratada.<br>
+
+Do ponto de vista econômico, qual equação possibilitaria encontrar a extensão da rodovia que tornaria indiferente para a prefeitura escolher qualquer uma das propostas apresentadas?
+<br><br>
+a) 100n + 350 = 120n + 150 ←<br>
+b) 100n + 150 = 120n + 350<br>
+c) 100(n + 350) = 120(n + 150)<br>
+d) 100(n + 350 000) = 120(n + 150 000)<br>
+e) 350(n + 100 000) = 150(n + 120 000)<br></p>
+</td>
+<td>
+  <div class="explicando">
+  <p>
+  <span class="negrito">8.Explicação</span><br><br>
+  <span class="desaparece">
+    Vamos identificar a primeira empresa descrita como Empresa A e a segunda como Empresa B. Podemos utilizar funções do 1° grau para descrever o preço cobrado por cada empresa. A empresa A tem um custo fixo de R$ 350 000,00 e cobra R$ 100 000,00 por km construído (n), então 350 000 é o termo constante e 100 000 é o coeficiente da variável n. A função que representa a empresa A é:
+    <br>
+    yA = an + b<br>
+    yA = 100000.n + 350000<br>
+
+    Para a empresa B, podemos afirmar que o custo fixo de R$ 150 000,00 é o termo constante e o valor de R$ 120 000,00 por km construído (n) é o coeficiente da variável n. Portanto, a função do preço cobrado pela empresa B é:
+    <br>
+    yB = an + b<br>
+    yB = 120000.n + 150000
+    <br>
+    O valor cobrado pelas duas empresas será o mesmo quando yA = yB, então, temos:
+    <br>
+    yA = yB<br>
+    100000.n + 350000 = 120000.n + 150000<br>
+
+    Dividindo ambos os membros da equação por 1000, teremos:
+    <br>
+    100.n + 350 = 120.n + 150
+    <br>
+    A alternativa que apresenta a equação correta é a letra a.
+  </span>
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p class="perguntas">9.(Concurso Correios - 2011)
+
+O piso de uma sala retangular, medindo 3,52 m × 4,16 m, será revestido com ladrilhos quadrados, de mesma dimensão, inteiros, de forma que não fique espaço vazio entre ladrilhos vizinhos. Os ladrilhos serão escolhidos de modo que tenham a maior dimensão possível. Na situação apresentada, o lado do ladrilho deverá medir:
+<br>
+a) mais de 30 cm.
+<br>
+b) menos de 15 cm.
+<br>
+c) mais de 15 cm e menos de 20 cm.
+<br>
+d) mais de 20 cm e menos de 25 cm.
+<br>
+e) mais de 25 cm e menos de 30 cm.  </p>
+</td>
+<td>
+  <div class="explicando">
+  <p>
+  <span class="negrito">9.Explicação</span><br><br>
+  <span class="desaparece">Para resolvermos essa questão devemos primeiro converter as medidas 3,52 m × 4,16 m para centímetros (cm).
+<br>
+3,52 x 100 = 352 cm
+<br>
+4,16 x 100 = 416 cm
+<br>
+Para escolher a dimensão adequada do ladrilho que irá revestir o piso retangular devemos fazer o MDC de 352 e 416.
+<br>
+352, 416| 2<br>
+176, 208| 2<br>
+  88, 104| 2<br>
+    44, 52| 2<br>
+    22, 26| 2<br>
+    11, 13| 11<br>
+      1, 13| 13<br>
+        1, 1|<br>
+<br>
+MDC = 2 x 2 x 2 x 2 x 2 = 32
+<Br>
+O ladrilho quadrado que irá revestir a sala retangular terá 32 cm x 32 cm de dimensão. Sendo assim, a resposta dessa questão é a letra a.</span>
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<p class="perguntas" id="dez">10.(ENEM 2013)
+A parte interior de uma taça foi gerada pela rotação de uma parábola em torno de um eixo z, conforme mostra a figura.
+<br>
+<img src="http://vestibular.mundoeducacao.com/upload/conteudo/img/2014/08/questao-1.jpg">
+<br>
+A função real que expressa a parábola, no plano cartesiano da figura, é dada pela lei  , onde C é a medida da altura do líquido contido na taça, em centímetros. Sabe-se que o ponto V, na figura, representa o vértice da parábola, localizado sobre o eixo x. Nessas condições, a altura do líquido contido na taça, em centímetros, é
+<br>
+a) 1.
+<br>
+b) 2.
+<br>
+c) 4.
+<br>
+d) 5.
+<br>
+e) 6.</p>
+</td>
+<td>
+  <div class="explicando">
+  <p>
+  <span class="negrito">10.Explicação</span><br><br>
+  <span class="desaparece">Conhecendo a função do 2° grau  , seus coeficientes são a = 3/2, b = – 6 e c = C. Vamos então identificar as coordenadas do vértice V da parábola:
+<br><br><br><br>
+xv = – b/2a<br>
+xv = – (– 6)/2.(3/2)<br>
+xv = 6/3<br>
+xv = 2<br>
+yv = – Δ/4a<br>
+yv = – (b² – 4.a.c)/4a<br>
+yv = – [(– 6)² – 4.(3/2).C]/4.(3/2)<br>
+yv = – [36 – 2.3.C]/2.3<br>
+yv = – 36 + 6.C/6<br>
+yv = – 6 + C<br>
+<Br>
+Mas o vértice está localizado no eixo x, logo yv = 0, portanto, temos:
+<br>
+yv = – 6 + C<br>
+0 = – 6 + C<br>
+C = 6<br>
+<br><br>
+A altura do líquido é de 6 cm, logo a alternativa correta é a letra e.</span>
+</p>
+</div>
+</td>
+</tr>
+</tabble>
+</main>
+<nav id="referencia">
+  <span id="H2">Referências</span>
+  <ul>
+<li><a href="https://exercicios.mundoeducacao.bol.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-1-o-grau.htm">NOSSAS</a>
+<li><a href="https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-calculo-mmc-mdc.htm">REFERÊNCIAS</a>
+<li><a href="https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-1-o-grau.htm">PARA</a>
+<li><a href="https://vestibular.mundoeducacao.bol.uol.com.br/enem/funcao-no-enem.htm">OS</a>
+<li><a href="https://exercicios.mundoeducacao.bol.uol.com.br/exercicios-matematica/exercicios-sobre-mdc.htm#resposta-2129">EXERCÍCIOS</a>
+</ul>
+</nav>
+  <script src="fecha header.js"></script>
+    <script src="exercicios.js"></script>
+  </body>
+</html>

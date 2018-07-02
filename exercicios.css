@@ -1,0 +1,129 @@
+/*div.explicando p{
+  opacity:0;
+  position:absolute;
+}
+p{
+  border: 0.5px solid black;
+  padding: 20px;
+}
+p.explicando.expandido{
+  opacity:1;
+  position: static;
+  transition: all 1s ease;
+}
+button.resposta{
+  opacity: 1;
+}*/
+@import url('https://fonts.googleapis.com/css?family=Spirax');
+p{
+  margin-top: 20px;
+}
+div.explicando p{
+  box-sizing: border-box;
+  width: 700px;
+  border:1px solid white;
+  padding-left:50px;
+  margin-top: 1px;
+
+}
+img#imagem{
+  display: block;
+  margin: auto;
+}
+p.perguntas{
+  padding: 50px;
+  background-image: radial-gradient(#52F3F3,#ebfefe);
+  border:2px solid #37E6D7;
+  border-radius: 30px;
+  box-sizing: border-box;
+  height: 450px;
+  margin-right: 60px;
+  width: 600px;
+}
+p.perguntas:hover{
+  padding: 50px;
+  background-image: radial-gradient(#52F3F3,#fdfdff);
+  border:2px solid rgba(55,230,231,0.5);
+  border-radius: 30px;
+  box-sizing: border-box;
+  height: 450px;
+  margin-right: 60px;
+  width: 600px;
+}
+p#seis{
+  padding: 50px;
+  background-image: radial-gradient(#52F3F3,#ebfefe);
+  border:2px solid #37E6D7;
+  border-radius: 30px;
+  box-sizing: border-box;
+  height: 450px;
+  margin-right: 60px;
+  width: 600px;
+  margin-bottom: 150px;
+}
+p#sete{
+  height:450px;
+  margin-bottom:150px;
+}
+p#dez{
+  height:auto;
+}
+caption{
+  text-align: left;
+  margin-left: 200px;
+  font-family: cursive;
+  color: #084843;
+  font-size: 30px;
+}
+.negrito{
+  font-weight: bold;
+
+}
+span.negrito {
+  border: 1px solid black;
+  background-color: #2BDDA5/*#CFF6EA*/;
+  box-sizing: border-box;
+  padding: 15px;
+  opacity:0.7;
+  font-family: sans-serif;
+}
+span.negrito:hover {
+  border: 1px solid black;
+  background-color: #2BDDA5/*#CFF6EA*/;
+  box-sizing: border-box;
+  padding: 15px;
+  opacity:0.5;
+}
+span.negrito:active {
+  opacity:1;
+}
+td.perguntas{
+  border-spacing: 30px;
+}
+span.desaparece{
+  visibility:hidden;
+}
+span.desaparece.aparece{
+  visibility: visible;
+}
+body{
+  position: relative;
+}
+nav#referencia{
+  display: block;
+  border: 1px solid black;
+  position: absolute;
+  top:100%;
+  left: 50%;
+  margin-left:-400px;
+  background-color: rgba(241, 255, 233, 1);
+  box-sizing: border-box;
+  width:800px;
+  padding: 20px;
+
+}
+nav#referencia li{
+  list-style: none;}
+nav#referencia a{
+  color: black;
+}
