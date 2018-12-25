@@ -24,7 +24,7 @@
 li.menu-principal{
   list-style: none;
   display:inline-block;
- /* width:15%;*/
+  width:%;
   text-align: center;
   height:2em;
   border-radius: 4px;
