@@ -162,3 +162,24 @@ main a:hover{
   position: relative;
   left:200px;
 }
+@media (max-width:1024px) {
+  p{
+    width: 32.33333333333333333333333333333333333333333%;
+  }
+}
+@media(max-width:900px){
+  p{
+    width: 49%;
+  }
+  main {
+    flex-direction: column;
+  }
+  .menu-logo>ul{
+    flex-direction: column;
+  }
+}
+@media(max-width:400px){
+  p{
+    width: 99%;
+  }
+}
