@@ -163,12 +163,12 @@ main a:hover{
   left:200px;
 }
 @media (max-width:1024px) {
-  p{
+  .menu-principal{
     width: 32.33333333333333333333333333333333333333333%;
   }
 }
 @media(max-width:900px){
-  p{
+  .menu-principal{
     width: 49%;
   }
   main {
@@ -179,7 +179,7 @@ main a:hover{
   }
 }
 @media(max-width:400px){
-  p{
+  .menu-principal{
     width: 99%;
   }
 }
