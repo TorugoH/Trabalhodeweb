@@ -1,3 +1,3 @@
 # Trabalhodeweb
 
-Primero site desenvolvido na disciplina de web
+Primero site desenvolvido em grupo para a disciplina de web
