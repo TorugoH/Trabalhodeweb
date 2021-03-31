@@ -13,3 +13,5 @@ Primero site desenvolvido em grupo para a disciplina de web
 ![image](https://user-images.githubusercontent.com/40009988/113080966-2ec60b00-91ae-11eb-9749-f19a974de58a.png)
 
 imagens do site
+
+Disponivel em: https://torugoh.github.io/intregandoConhecimento/sobre.html
